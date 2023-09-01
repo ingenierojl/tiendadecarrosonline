@@ -1,0 +1,380 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    min-height: 100%;
+}
+.header
+{
+    grid-area: header;
+    
+}
+
+.nav-bar
+{
+    grid-area:nav-bar;
+    background-color: chartreuse;
+}
+.sidebar
+{   grid-area: sidebar;
+    background-color: crimson;
+}
+.main
+{
+    grid-area: main;
+    background-color: cornsilk;
+    background-color: #f5f5f5;
+
+    
+}
+.footer
+{   
+    grid-area: footer;
+    background-color: darkmagenta;
+}
+
+/* INICIO REGISTER*/
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+    cursor: pointer;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  /* FIN REGISTER*/
+
+#mainregister
+  { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  /* INICIO ESTILO DE NOSOTROS MISION Y VISION*/
+
+.bodymision
+{
+  background-image: url('/static/img/mision.gif');
+  background-position: center;
+  
+  margin-top: 5%; 
+
+}
+/* Estilos para el contenedor del artículo */
+.mainnosotros {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+}
+
+/* Estilos para el párrafo del artículo */
+.mainnosotros p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el título del artículo */
+.mainnosotros h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el título de la página */
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+/* Estilos para los encabezados */
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/* Estilos para los márgenes */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* Estilos para los párrafos */
+p {
+  line-height: 1.6;
+}
+
+
+/*FINAL ESTILO NOSOTROS MISON Y VISION*/
+
+
+/* LOGIN INICIO */
+
+.card {
+  width: 190px;
+  padding: 1.9rem 1.2rem;
+  text-align: center;
+  background: #2a2b38;
+ }
+ 
+ /*Inputs*/
+ .field {
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  background-color: #1f2029;
+  border-radius: 4px;
+  padding: .5em 1em;
+ }
+ 
+ .input-icon {
+  height: 1em;
+  width: 1em;
+  fill: #ffeba7;
+ }
+ 
+ .input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+ }
+ 
+ /*Text*/
+ .title {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #f5f5f5;
+ }
+ 
+ /*Buttons*/
+ .btn {
+  margin: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  padding: 0.6em 1.2em;
+  background-color: #ffeba7;
+  color: #5e6681;
+  box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+  transition: all .3s ease-in-out;
+ }
+ 
+ .btn-link {
+  color: #f5f5f5;
+  display: block;
+  font-size: .75em;
+  transition: color .3s ease-out;
+ }
+ 
+ /*Hover & focus*/
+ .field input:focus::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
+ }
+ 
+ .btn:hover {
+  background-color: #5e6681;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+ }
+ 
+ .btn-link:hover {
+  color: #ffeba7;
+ }
+/*LOGIN FINAL*/ 
+
+.bodylogin
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/static/img/fondologin.gif');
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "header"  80px
+      "nav-bar"  50px
+      "main"    auto
+      "sidebar" 50px
+      "footer"  50px;
+  }
+@media (min-width: 600px) and (max-width: 899px) 
+  {
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        grid-template:
+          "header header" 80px
+          "nav-bar nav-bar"  50px
+         "sidebar main " auto
+          "footer footer"  50px / 200px auto;
+      }      
+  }
+  @media (min-width: 900px) 
+  {
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        grid-template:
+          "header header header" 80px
+          "nav-bar main sidebar"  auto
+          "footer footer footer"  100px / 200px    auto   200px;
+      }      
+  }
+
+
+
